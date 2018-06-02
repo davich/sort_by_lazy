@@ -14,6 +14,8 @@ class Sortby
     end
   end
 
+  private
+
   def compare(left, right)
     @lambdas.each do |lambda|
       x = cached(lambda, left) <=> cached(lambda, right)
